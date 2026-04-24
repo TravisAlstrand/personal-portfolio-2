@@ -28,7 +28,7 @@ export default function HeaderNav() {
       {/* MOBILE NAVIGATION PANEL */}
       <div
         id="mobile-menu"
-        className={`fixed top-14.5 right-0 bottom-0 z-20 w-full bg-amber-400 py-12 transition-transform duration-300 ease-in-out lg:hidden ${menuIsOpen ? "translate-x-0" : "translate-x-full"}`}
+        className={`bg-card border-border fixed top-18 bottom-0 left-1/2 z-20 h-fit w-11/12 rounded-4xl border-2 py-12 transition-transform duration-300 ease-in-out lg:hidden ${menuIsOpen ? "-translate-x-1/2" : "translate-x-full"}`}
         aria-modal="true"
         aria-label="Mobile navigation"
       >

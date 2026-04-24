@@ -1,13 +1,15 @@
 import "./App.css";
 
 import Header from "./components/Header/Header";
+import Hero from "./components/Hero";
 
 function App() {
   return (
     <>
       <Header />
-      <div className="h-screen bg-gray-600"></div>
-      <div className="h-screen bg-gray-600"></div>
+      <Hero />
+      <div className="bg-background h-screen"></div>
+      <div className="bg-background h-screen"></div>
     </>
   );
 }
