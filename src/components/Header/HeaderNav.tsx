@@ -1,19 +1,18 @@
-import { useState } from "react";
 import { FaBars, FaXmark } from "react-icons/fa6";
 
-export default function HeaderNav() {
-  const [menuIsOpen, setMenuIsOpen] = useState(false);
-
-  function toggleMobileMenu() {
-    setMenuIsOpen(!menuIsOpen);
-  }
-
+export default function HeaderNav({
+  menuIsOpen,
+  onMenuToggle,
+}: {
+  menuIsOpen: boolean;
+  onMenuToggle: () => void;
+}) {
   return (
     <>
       {/* MOBILE MENU ICON */}
       <button
         className="lg:hidden"
-        onClick={toggleMobileMenu}
+        onClick={onMenuToggle}
         aria-expanded={menuIsOpen}
         aria-controls="mobile-menu"
         aria-label={menuIsOpen ? "Close menu" : "Open menu"}
@@ -24,34 +23,6 @@ export default function HeaderNav() {
           <FaBars aria-hidden="true" />
         )}
       </button>
-
-      {/* MOBILE NAVIGATION PANEL */}
-      <div
-        id="mobile-menu"
-        className={`bg-card border-border fixed top-18 bottom-0 left-1/2 z-20 h-fit w-11/12 rounded-4xl border-2 py-12 transition-transform duration-300 ease-in-out lg:hidden ${menuIsOpen ? "-translate-x-1/2" : "translate-x-full"}`}
-        aria-modal="true"
-        aria-label="Mobile navigation"
-      >
-        <nav>
-          <ul className="flex flex-col items-center justify-center gap-12">
-            <li>
-              <a href="#about" onClick={() => setMenuIsOpen(false)}>
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#projects" onClick={() => setMenuIsOpen(false)}>
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#contact" onClick={() => setMenuIsOpen(false)}>
-                Contact
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </div>
 
       {/* DESKTOP NAVIGATION MENU */}
       <nav className="hidden lg:block">

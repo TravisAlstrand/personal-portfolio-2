@@ -5,12 +5,12 @@ import Hero from "./components/Hero";
 
 function App() {
   return (
-    <>
+    <div className="font-sketch">
       <Header />
       <Hero />
       <div className="bg-background h-screen"></div>
       <div className="bg-background h-screen"></div>
-    </>
+    </div>
   );
 }
 
