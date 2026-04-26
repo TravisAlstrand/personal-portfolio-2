@@ -2,14 +2,19 @@ import { SketchBorderWrapper, SketchUnderline } from "./ui/sketch-border";
 
 export default function Hero() {
   return (
-    <SketchBorderWrapper className="mx-auto mb-12 w-11/12 p-8">
-      <section className="mx-auto max-w-4xl">
+    <SketchBorderWrapper className="mx-auto mb-12 w-11/12 px-8 py-12">
+      <section className="mx-auto flex max-w-4xl flex-col">
         <div>
           <p className="mb-2">Well Hello There...</p>
           <h1 className="mb-4 text-5xl font-bold">I'm Travis</h1>
-          <span className="text-lg">
+          <p className="mb-8 text-lg">
             A developer transitioning into cybersecurity.
-          </span>
+          </p>
+          <img
+            src="./laptop.webp"
+            alt="Laptop with a security shield on the screen."
+            className="mb-8"
+          />
           <div className="mt-6 flex w-full justify-center gap-4">
             <a
               href="#projects"
@@ -27,7 +32,7 @@ export default function Hero() {
             </a>
           </div>
         </div>
-        <div>
+        <div className="hidden">
           <img
             src="./laptop.webp"
             alt="Laptop with a security shield on the screen."
