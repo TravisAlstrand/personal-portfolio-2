@@ -152,7 +152,7 @@ export function SketchBorderWrapper({
     <div className={`relative ${className}`}>
       {/* Top border */}
       <svg
-        className="text-foreground/80 pointer-events-none absolute top-0 left-1 h-3 w-[calc(100%-8px)]"
+        className="text-foreground/80 pointer-events-none absolute -top-1 left-0 h-3 w-full"
         preserveAspectRatio="none"
         viewBox="0 0 400 6"
         fill="none"
@@ -181,7 +181,7 @@ export function SketchBorderWrapper({
 
       {/* Right border */}
       <svg
-        className="text-foreground/80 pointer-events-none absolute top-1 right-0 h-[calc(100%-8px)] w-3"
+        className="text-foreground/80 pointer-events-none absolute top-1 -right-1 h-[calc(100%-8px)] w-3"
         preserveAspectRatio="none"
         viewBox="0 0 6 300"
         fill="none"
@@ -210,7 +210,7 @@ export function SketchBorderWrapper({
 
       {/* Bottom border */}
       <svg
-        className="text-foreground/80 pointer-events-none absolute bottom-0 left-1 h-3 w-[calc(100%-8px)]"
+        className="text-foreground/80 pointer-events-none absolute -bottom-1 left-0 h-3 w-full"
         preserveAspectRatio="none"
         viewBox="0 0 400 6"
         fill="none"
@@ -239,7 +239,7 @@ export function SketchBorderWrapper({
 
       {/* Left border */}
       <svg
-        className="text-foreground/80 pointer-events-none absolute top-1 left-0 h-[calc(100%-8px)] w-3"
+        className="text-foreground/80 pointer-events-none absolute top-1 -left-1 h-[calc(100%-8px)] w-3"
         preserveAspectRatio="none"
         viewBox="0 0 6 300"
         fill="none"
