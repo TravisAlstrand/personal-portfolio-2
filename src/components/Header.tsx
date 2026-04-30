@@ -11,7 +11,7 @@ export default function Header() {
   return (
     <>
       <div className="bg-background sticky top-0 z-10 mb-8 flex w-full justify-center">
-        <SketchBorderWrapper className="bg-card mt-4 w-11/12 px-6 py-4">
+        <SketchBorderWrapper className="mt-4 w-11/12 px-6 py-4">
           <header className="flex items-center justify-between">
             <p>&#123; tA &#125;</p>
             <button

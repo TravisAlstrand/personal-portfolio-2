@@ -18,14 +18,14 @@ export default function Hero() {
           <div className="mt-6 flex w-full justify-center gap-4">
             <a
               href="#projects"
-              className="text-primary relative inline-block px-4 py-4 transition-opacity hover:opacity-80"
+              className="text-primary relative inline-block p-4 transition-opacity hover:opacity-80"
             >
               <span className="relative">View Projects</span>
               <SketchUnderline className="absolute bottom-0 left-0 w-full" />
             </a>
             <a
               href="#contact"
-              className="text-primary relative inline-block px-4 py-4 transition-opacity hover:opacity-80"
+              className="text-primary relative inline-block p-4 transition-opacity hover:opacity-80"
             >
               <span className="relative">Contact Me</span>
               <SketchUnderline className="absolute bottom-0 left-0 w-full" />

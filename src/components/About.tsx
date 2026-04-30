@@ -6,7 +6,7 @@ export default function About() {
       id="about"
       className="mb-12 flex flex-col items-center justify-center px-8"
     >
-      <h2 className="text-3xl font-bold">About Me</h2>
+      <h2 className="mb-4 text-3xl font-bold">About Me</h2>
       <SketchUnderline className="mb-8" />
       <p className="mb-4">
         I started learning to code in 2021 and quickly focused on building
